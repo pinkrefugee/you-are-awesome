@@ -147,11 +147,12 @@ describe(('You are awesome, aren\'t you?'), () => {
     assert.equal(count2, 700)
   });
 
-  it('createSerializedObject', () => {
+  it('createSerializedObject', () => { 
     const object = createSerializedObject();
 
     assert.equal(typeof object, 'object');
     assert.equal(JSON.parse(JSON.stringify(object)), object);
+
   });
 
   it('sortByProto', () => {
